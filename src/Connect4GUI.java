@@ -46,7 +46,7 @@ public class Connect4GUI {//Class for the GUI of the game
         JButton start = new JButton("New Game");
         JButton load = new JButton("Load Game");
         window = new JFrame("Connect 4!");
-        window.setDefaultCloseOperation(window.EXIT_ON_CLOSE);
+        window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         size(window, new Dimension(770, 805));
         window.setResizable(false);
         window.setLocationRelativeTo(null);

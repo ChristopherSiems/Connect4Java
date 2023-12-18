@@ -26,15 +26,6 @@ public class Connect4Logic {//Connect4 internal game logic
         scan.close();
     }
 
-    private void print(){//Method to print the board to console
-        System.out.println();
-        for(int row = 5; row >= 0; row--){
-            for (int[] column : board) {
-                System.out.print(column[row] + " ");
-            }
-            System.out.println();
-        }
-    }
     private boolean won(int column, int top){//Method to check and return true if the player who just moved won on that move
         int segment = 1;
         for (int checking = top - 1; checking >= 0; checking--){
